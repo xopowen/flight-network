@@ -1,0 +1,152 @@
+@import "addidions/screen-mixins";
+@import "addidions/functions";
+.book-flight {
+  padding-top:40px ;
+  padding-bottom: 20px;
+  background-image:url("../img/world-map-homepage-e1619301116606.jpg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  &__head {
+    color: var(--color-text-white,white);
+
+    text-align: center;
+    font-family: 'Jaldi',sans-serif;
+    font-size: clamp(1.5rem,getPercentW(42),36px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &__head-calc{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__calculate {
+    margin-inline: auto;
+    margin-top: 5px;
+    font-family: 'Lato',sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.calculate-book-flight {
+
+  font-family: 'Lato',sans-serif;
+  font-size: clamp(1rem,getPercentW(18),18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+
+  padding: 18px clamp(18px,getPercentW(62),62px) 36px clamp(18px,getPercentW(86),86px) ;
+  background: var(--background-color-main);
+  @include media-portrait767max{
+    gap: 30px;
+  }
+  @include media-phones480max{
+    gap: 15px;
+  }
+
+  select,input {
+    color: #111F44;
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+
+
+  sup{
+    color:var(--calc-sup);
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__direction {
+    display: flex;
+    gap: 47px;
+    @include media-portrait767max{
+      gap: 30px;
+    }
+    @include media-phones480max{
+      gap: 15px;
+    }
+  }
+  &__flex{
+    display: flex;
+    gap: 37px;
+    row-gap: 15px;
+    justify-content: center;
+    @include media-desktop768min979max{
+      gap: 20px;
+    }
+  }
+  &__subtext{
+
+  }
+  &__ticket-info {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  &__field {
+    display: inline-flex;
+
+    width: clamp(285px,getPercentW(325),325px);
+    min-height: 57px;
+    padding: 4px 6px;
+    color: var(--bgr-header-footer);
+
+    select,input {
+      align-self: end;
+      margin-bottom: 6px;
+      color: #111F44;
+
+      font-family: 'Lato',sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+  }
+
+  &__container-arrive {
+    @include media-portrait767max{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    width: clamp(175px,getPercentW(210),210px);
+    height: 55px;
+  }
+}
+
+

@@ -1,0 +1,88 @@
+@import "addidions/functions";
+@import "addidions/screen-mixins";
+.progress-deal {
+  --main-color:#A6A0A0;
+  position: relative;
+  color: var(--main-color);
+  margin-top: 32px;
+  &__items{
+     pointer-events: none;
+    display: flex;
+    column-gap:clamp(10px, getPercentW(196), 196px) ;
+    margin-left: clamp(5px,getPercentW(47),47px);
+    letter-spacing: -2px;
+    @include media-portrait767max{
+      font-size: 1rem;
+    }
+    @include media-phones480max{
+      font-size: 1.5rem;
+      justify-content: center;
+    }
+
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &_active {
+
+    }
+
+    @include media-phones480max{
+      &{
+        display: none;
+        &_active {
+          display: flex;
+        }
+      }
+    }
+
+  }
+  &__item_active > &__level{
+    background: var(--bgr-header-footer);
+    color: var(--bgr-header-footer);
+
+
+    @include media-phones480max{
+      color: white;
+    }
+
+  }
+  &__level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--main-color);
+    color: white;
+    text-align: center;
+
+    min-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 100%;
+
+    @include media-portrait767max{
+      min-width: 20px;
+      min-height: 20px;
+      max-height: 20px;
+      max-width: 20px;
+    }
+    @include media-phones480max{
+      min-width: 40px;
+      min-height: 40px;
+      max-height: 40px;
+      max-width: 40px;
+    }
+  }
+  &__progress-line{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #D9D9D9;
+    &::-moz-progress-bar { background: var(--bgr-header-footer); }
+    &::-webkit-progress-value { background:  var(--bgr-header-footer); }
+    & { color:  var(--bgr-header-footer); }
+  }
+}
+

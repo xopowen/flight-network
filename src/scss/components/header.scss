@@ -1,0 +1,56 @@
+@import "addidions/functions";
+@import "addidions/screen-mixins";
+.header {
+  padding-block:9px ;
+  gap: clamp(30px,getPercentW(74),74px);
+  display: flex;
+  align-items:center ;
+  flex-wrap: wrap;
+  @include media-portrait767max{
+    justify-content: center;
+  }
+
+    picture,
+      source,
+      img{
+      width: 100%;
+      min-width: 20%;
+      object-fit: contain;
+    }
+
+  &__logo-and-name {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    white-space: nowrap;
+    font-family: 'Jaldi', sans-serif;
+    font-size: clamp(1.5rem,getPercentW(35),35px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+  }
+
+  &__nav {
+    font-family: 'Jaldi', sans-serif;
+    font-size:  clamp(1rem,getPercentW(25),25px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @include media-portrait767max{
+      font-weight: 800;
+    }
+    ul{
+      display: flex;
+      gap: clamp(10px,getPercentW(49),49px);
+      align-items: center;
+    }
+
+  }
+  &__link{
+    %_active{
+      color: gray;
+    }
+  }
+}

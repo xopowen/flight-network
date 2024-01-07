@@ -1,0 +1,57 @@
+@import "addidions/functions";
+.lato{
+  font-family: 'Lato',sans-serif;
+  font-style: normal;
+  line-height: normal;
+  &_700{
+    font-weight: 700;
+  }
+  &_800{
+    font-weight: 800;
+  }
+  &_400{
+    font-weight: 400;
+  }
+  &_500{
+    font-weight: 500;
+  }
+  &_300{
+    font-weight: 300;
+  }
+}
+
+.text-size{
+  &_16{
+    font-size: 14px;
+  }
+  &_16{
+    font-size: clamp(1em,getPercentW(16),16px);
+  }
+  &_17{
+    font-size: 17px;
+  }
+  &_18{
+    font-size: 18px;
+  }
+  &_20{
+    font-size:  clamp(1.2rem,getPercentW(20),20px);
+  }
+  &_22{
+    font-size:  clamp(1.2rem,getPercentW(22),22px);
+  }
+  &_26{
+    font-size:  clamp(1.3rem,getPercentW(26),26px);
+  }
+  &_24{
+    font-size:  clamp(1.3rem,getPercentW(24),24px);
+  }
+  &_28{
+    font-size:  clamp(1.3rem,getPercentW(28),28px);
+  }
+  &_30{
+    font-size: clamp(1.5rem,getPercentW(30),30px);
+  }
+  &_35{
+    font-size: clamp(1.5rem,getPercentW(35),35px);
+  }
+}

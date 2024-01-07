@@ -1,0 +1,4 @@
+@import "variable";
+@function getPercentW($n) {
+  @return #{($n / $screen-desktop-width * 100)}+ vw;
+}

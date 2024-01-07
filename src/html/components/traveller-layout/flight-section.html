@@ -1,0 +1,174 @@
+<section class="container travel-info">
+
+    @@include('../traveller-layout/h1.html',{'text':'Traveller information'})
+
+    <div class="travel-info__main">
+        <article itemscope class="gray-border travel-info__contact form-info lato lato_700">
+            <h2 class="form-info__head  text-size_35">Contact information for all passengers</h2>
+            <div class="form-info__flex    ">
+                <label class="form-info__field     text-size_24">
+                    Email
+
+                    <div class="round-gray-field form-info__input-container">
+                        <input class="lato_500 text-size_18" required type="email" placeholder="Email@yahoo.com">
+                    </div>
+
+                </label>
+                <label class="  form-info__field  text-size_24">
+                    Mobile Number
+                    <div class="round-gray-field text-size_18 form-info__input-container">
+                        <input class="lato_500 text-size_18 form-info__prefix-input" required type="text"  value="+68">
+                        <input class="lato_500 text-size_18" required type="number"  >
+                    </div>
+
+                </label>
+            </div>
+
+            <label class="form-info__permit">
+                <input name="permit" type="checkbox">
+                I do not wish to receive any newsletters about cheap air fares or other offers
+            </label>
+
+        </article>
+        <article itemscope class="gray-border travel-info__contact form-info form-info_big-padding lato lato_700">
+            <h2 class="form-info__head  text-size_35">Passenger 1, adult</h2>
+            <p class="form-info__subtext text-size_18 lato_400">*Field required</p>
+
+            <div class=" form-info__title">
+                <p class="form-info__field text-size_20 lato_400 ">     Title* </p>
+                <div class="form-info__radio-container">
+                    <div class="custom-radio text-size_22 lato_400  ">
+                        <input id="title-mr" type="radio"  name="title"/>
+                        <label for="title-mr">Mr</label>
+                    </div>
+                    <div class="custom-radio text-size_22 lato_400  ">
+                        <input id="title-mrs-ms" type="radio"  name="title"/>
+                        <label for="title-mrs-ms">Mrs/Ms</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-info__flex    ">
+                <label class="form-info__field     text-size_24">
+                    First name
+
+                    <div class="round-gray-field form-info__input-container">
+                        <input class="lato_500 text-size_18" name="first-name" required type="text" placeholder="Test">
+                    </div>
+
+                </label>
+                <label class="  form-info__field  text-size_24">
+                    Surname
+                    <div class="round-gray-field form-info__input-container">
+                        <input class="lato_500 text-size_18" name="sur-name" required type="text" placeholder="Testtest">
+                    </div>
+
+                </label>
+            </div>
+
+
+
+        </article>
+        <article itemscope class="add-service lato lato_700">
+            <h2 class="text-size_35 add-service__head">
+                Hand Baggage
+            </h2>
+            <div class="gray-border add-service__main text-size_22">
+                <img src="@@webRoot/static/img/icons/shopping-bag.svg" width="512" height="512" alt=""/>
+                <div class="add-service__info ">
+                    <h3 class="add-service__name lato_800">Hand baggage</h3>
+                    <p class="add-service__mass lato_400">1X7 Kg</p>
+                </div>
+                <p class="add-service__status"><strong>Included</strong> </p>
+            </div>
+        </article>
+        <article itemscope class="add-service lato lato_700">
+            <h2 class="text-size_35 add-service__head">
+                Checked baggage
+            </h2>
+            <div class="gray-border add-service__main text-size_22">
+                <img src="@@webRoot/static/img/icons/shopping-bag.svg" width="512" height="512" alt=""/>
+                <div class="add-service__info ">
+                    <h3 class="add-service__name lato_800">Checked baggage</h3>
+                    <p class="add-service__mass lato_400">1X7 Kg</p>
+                </div>
+                <p class="add-service__status"><strong>Included</strong> </p>
+            </div>
+        </article>
+
+        <article itemscope class="lost-bag-service lato lato_700">
+            <div class="lost-bag-service__img-container">
+                <img src="@@webRoot/static/img/Screenshot 2022-12-16 160342.jpg" width="345" height="307" alt="baggage">
+            </div>
+            <div itemscope class="lost-bag-service__main">
+                <h2 class="lost-bag-service__head text-size_35">
+                    Lost Baggage Service
+                </h2>
+                <p class="lato_400 text-size_24 lost-bag-service__text">
+                    Our partner Blue Ribbon Bags helps you track lost baggage for up to 96 hours. If your bag is not returned by then you will receive
+                    <br>500 USD.
+                </p>
+                <p class="lost-bag-service__count lato_400 text-size_22">
+                    Only
+                </p>
+                <p class="lost-bag-service__price lato_700 text-size_30">
+                    <strong>Au$ 10.86 </strong>
+                </p>
+                <div class="lost-bag-service__question lato_400 text-size_24">
+                    <div class="custom-radio   ">
+                        <input id="lost-bag-service-no" type="radio"  name="lost-bag-service"/>
+                        <label for="lost-bag-service-no">No</label>
+                    </div>
+                    <div class="custom-radio   ">
+                        <input id="lost-bag-service-yes"
+                               type="radio"
+
+                               name="lost-bag-service"/>
+                        <label for="lost-bag-service-yes"  >yes</label>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="travel-info__submit-for-forms lato">
+            <p class="lato_400 text-size_28 travel-info__text-center">
+                By booking you confirm that the names on the booking match those on the passports
+                of those travelling.
+            </p>
+
+            <button aria-label="submit" class="btn btn_submit travel-info__submit">
+                Continue
+            </button>
+
+        </div>
+    </div>
+
+    <aside itemscope class="gray-border y-order">
+        <h2 class="y-order__head lato lato_700 text-size_35">Your Order</h2>
+        <div class="y-order__main">
+            <div class="y-order__info">
+                <p class="lato lato_800 text-size_28">Departure</p>
+                <time class="lato lato_700 text-size_22">Fri 26 Dec 2022</time>
+                <div class="y-order__count lato lato_700 text-size_26">
+                    <img src="@@webRoot/static/img/icons/take-off.svg">
+                    1
+                </div>
+            </div>
+            <div class="y-order__info">
+                <p class="lato lato_800 text-size_28">10:00 AM - 4:00PM</p>
+                <time class="lato lato_700 text-size_22">Fri 26 Dec 2022</time>
+            </div>
+        </div>
+        <div class="y-order__footer lato_800 lato text-size_28">
+            <p  >Test Testtrfe, adult</p>
+            <p class="y-order__left-text">AU$300.45</p>
+        </div>
+    </aside>
+
+    <p class="lato lato_700 text-size_24 travel-info__option-text">
+        ​In respect to ​flights, hotels, and car hire services offered on our website, we are acting solely in our capacity as intermediary.
+        Our prices and availability are entered directly by the current providers. In respect of price changes that are out of our control
+        and which occur after a booking query has been made but before the contract with the provider has become valid, the contract
+        will not come into force and your payment will be refunded in full.
+    </p>
+</section>

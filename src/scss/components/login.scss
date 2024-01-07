@@ -1,0 +1,73 @@
+@import "addidions/screen-mixins";
+.fly-background{
+  background-image: url("../img/fly-backround.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center top;
+}
+.login-form {
+  max-height: 826px;
+  height: 70vh;
+  padding-block: 26px 45px;
+  padding-inline:72px ;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+  gap: 16px;
+  color: white;
+  background: rgba(217, 217, 217, 0.24);
+  align-items: end;
+  @include media-phones480max{
+    width: auto;
+    padding-inline:15px ;
+    align-items: center;
+  }
+  @media screen  and (max-height: 920px){
+    height: 100%;
+  }
+  &__main{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    gap: 16px;
+  }
+  &__img {
+    width: 273px;
+    height: 240px;
+
+      picture,
+        source,
+        img{
+        width: 100%;
+        height: 100%;
+      }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    input{
+      padding: 10px;
+      border-radius: 4px;
+      background: rgba(217, 217, 217, 0.46);
+    }
+  }
+
+  &__btn {
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    background: rgba(17, 31, 68, 0.54);
+    width: 100%;
+  }
+
+  &__subtext {
+    margin-top: 46px;
+    text-align: center;
+  }
+}
+

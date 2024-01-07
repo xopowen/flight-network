@@ -1,0 +1,64 @@
+@import "addidions/functions";
+@import "addidions/screen-mixins";
+.footer {
+  padding-block:clamp(15px,getPercentW(39),39px) ;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px,getPercentW(68),68px);
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media-phones480max{
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+    }
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  &__link {
+    font-size: 25px;
+    font-family: 'Lato' , sans-serif;
+    font-weight: 400;
+    &:first-child{
+      font-size: 27px;
+      font-weight: 700;
+    }
+  }
+
+  &__down {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      picture,
+        source,
+        img{
+        max-width: 100%;
+      }
+  }
+  &__to-login{
+    color: inherit;
+    display: flex;
+    justify-content: left;
+    gap: 38px;
+    padding: 7px 33px;
+    width: 298px;
+    height: 50px;
+    flex-shrink: 0;
+    border: 2px solid #FFF;
+    align-items: center;
+
+    font-family: 'Lato' ,sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

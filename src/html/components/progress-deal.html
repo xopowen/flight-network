@@ -1,0 +1,56 @@
+<article class="progress-deal lato lato_700 text-size_22">
+    <div class="container progress-deal__items">
+        @@if (progressStage === 1  ) {
+        <div class="progress-deal__item progress-deal__item_active">
+            <p class="progress-deal__level">
+                1
+            </p>
+            <p ><strong>Flight Section</strong></p>
+        </div>
+        }
+        @@if (progressStage !== 1  ) {
+        <div class="progress-deal__item ">
+            <p class="progress-deal__level">
+                1
+            </p>
+            <p ><strong>Flight Section</strong></p>
+        </div>
+        }
+        @@if (progressStage === 2  ) {
+        <div class="progress-deal__item progress-deal__item_active">
+            <p class="progress-deal__level">
+                2
+            </p>
+            <p ><strong>Traveller information</strong></p>
+        </div>
+        }
+        @@if (progressStage !== 2  ) {
+        <div class="progress-deal__item ">
+            <p class="progress-deal__level">
+                2
+            </p>
+            <p ><strong>Traveller information</strong></p>
+        </div>
+        }
+        @@if (progressStage === 3  ) {
+        <div class="progress-deal__item progress-deal__item_active">
+            <p class="progress-deal__level">
+                3
+            </p>
+            <p ><strong>Payment</strong></p>
+        </div>
+        }
+        @@if (progressStage !== 3  ) {
+        <div class="progress-deal__item">
+            <p class="progress-deal__level">
+                3
+            </p>
+            <p ><strong>Payment</strong></p>
+        </div>}
+
+    </div>
+    <progress value="50"  max="100" class="progress-deal__progress-line">
+
+    </progress>
+
+</article>

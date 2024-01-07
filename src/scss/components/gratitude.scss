@@ -1,0 +1,39 @@
+@import "login";
+@import "addidions/screen-mixins";
+.gratitude {
+  position: absolute;
+  right: 23%;
+  top: 5%;
+@include media-phones480max{
+  position: relative;
+  right: auto;
+  margin: 15px;
+}
+
+  &__img {
+    @extend .login-form__img;
+    width: 180px;
+    height: 147.981px;
+  }
+
+  &__main {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+  }
+
+  &__btn {
+    @extend .login-form__btn;
+    padding: 12px;
+    width: 435px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-phones480max{
+      width: 340px;
+    }
+  }
+}
+
