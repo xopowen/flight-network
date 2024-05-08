@@ -1,7 +1,8 @@
 @import "addidions/functions";
 @import "addidions/screen-mixins";
 .header {
-  padding-block:9px ;
+  padding-top:9px ;
+  padding-bottom: 9px;
   gap: clamp(30px,getPercentW(74),74px);
   display: flex;
   align-items:center ;
@@ -33,10 +34,11 @@
 
   &__nav {
     font-family: 'Jaldi', sans-serif;
-    font-size:  clamp(1rem,getPercentW(25),25px);
+    font-size:  clamp(2rem,getPercentW(25),25px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    overflow-y: auto;
 
     @include media-portrait767max{
       font-weight: 800;
@@ -45,12 +47,22 @@
       display: flex;
       gap: clamp(10px,getPercentW(49),49px);
       align-items: center;
+      white-space: nowrap;
+      li{
+        &::first-letter{
+          text-transform: uppercase;
+        }
+      }
     }
+
 
   }
   &__link{
-    %_active{
+
+    &_active{
       color: gray;
     }
+
   }
+
 }
