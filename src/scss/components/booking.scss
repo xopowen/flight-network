@@ -108,7 +108,8 @@
     color: white;
   }
   &__time-before-shipping,&__departure{
-    padding-block:5px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
 
   }
   &__departure {
@@ -123,16 +124,19 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     padding-right: clamp(20px,getPercentW(47),var(--padding-right));
-    padding-block: 23px clamp(23px,getPercentW(44), 44px );
+    padding-top:  23px ;
+    padding-bottom: clamp(23px,getPercentW(44), 44px );
 
     @include media-portrait767max{
       grid-template-columns: 1fr;
       text-align: center;
       gap: 15px;
-      padding-block: 10px 30px ;
+      padding-top: 10px ;
+      padding-bottom: 30px ;
     }
     @include media-phones480max{
-      padding-block: 10px 10px ;
+      padding-top:  10px  ;
+      padding-bottom: 10px;
     }
   }
   &__time-before-shipping,&__departure,&__main{

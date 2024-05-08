@@ -1,7 +1,8 @@
 @import "addidions/functions";
 @import "addidions/screen-mixins";
 .footer {
-  padding-block:clamp(15px,getPercentW(39),39px) ;
+  padding-top:clamp(15px,getPercentW(39),39px) ;
+  padding-bottom:clamp(15px,getPercentW(39),39px) ;
   display: flex;
   flex-direction: column;
   gap: clamp(20px,getPercentW(68),68px);

@@ -12,7 +12,8 @@
 .travel-info {
   padding-right:  clamp(15px,getPercentW(106),106px);
   margin-left: 25px;
-  margin-block:26px 48px;
+  margin-top: 26px;
+  margin-bottom: 48px;
   display: grid;
   grid-template-columns: 1fr clamp(100px,getPercentW(398),398px);
   column-gap: clamp(15px,getPercentW(98),98px);
@@ -20,12 +21,14 @@
   @include media-portrait767max{
     grid-template-columns: 1fr 30%;
     margin-left: 0;
-    margin-block:25px ;
+    margin-bottom: 25px;
+    margin-top: 25px;
     row-gap: 20px;
   }
   @include media-phones480max{
     grid-template-columns:auto;
-    margin-block:15px ;
+    margin-bottom: 15px ;
+    margin-top: 15px ;
     row-gap: 10px;
   }
   h1{
@@ -77,7 +80,8 @@
   }
   &__option-text{
     margin-top: 11px;
-    padding-inline: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     opacity: .5;
     grid-column: span 2;
     @include media-phones480max{
@@ -92,10 +96,11 @@
 
 
 .form-info {
-  padding-block: 22px 16px ;
-  padding-inline:12px ;
+  padding: 22px 12px 16px;
+
   &_big-padding{
-    padding-block: 46px 16px ;
+    padding-top: 46px ;
+    padding-bottom: 16px ;
   }
   &__head {
     letter-spacing: -1.1px;
@@ -105,13 +110,13 @@
   &__flex {
     display: flex;
     gap: clamp(15px,getPercentW(125),125px);
-    padding-block:  clamp(15px,getPercentW(42),42px) 23px;
-    padding-inline: 52px 26px;
+    padding:  clamp(15px,getPercentW(42),42px) 52px 23px 26px;
+
 
     @include media-portrait767max{
       flex-direction: column;
-
-      padding-inline: 15px;
+      padding-left:  15px;
+      padding-right: 15px;
     }
 
   }
@@ -132,9 +137,7 @@
     .form-info__prefix-input{
       width: 24%;
       min-width: 50px;
-      padding-block:5px  ;
-      padding-inline:   5%;
-      padding-right: 5px;
+      padding: 5px 5px 5% 5px ;
     }
   }
 
@@ -183,9 +186,11 @@
 
 .y-order {
   align-self: start;
-  padding-block: 23px 38px;
+  padding-top:  23px ;
+  padding-bottom: 38px;
   @include media-portrait767max{
-    padding-block:15px;
+    padding-top:  15px ;
+    padding-bottom: 15px;
   }
   &__pay-service{
     &+&{
@@ -209,7 +214,8 @@
   }
   &__main {
     margin-top: 36px;
-    padding-block:24px 38px ;
+    padding-bottom:38px ;
+    padding-top:24px ;
     display: flex;
     flex-direction: column;
     row-gap: 13px;
@@ -222,7 +228,8 @@
     }
     @include media-portrait767max{
       margin-top: 15px;
-      padding-block:15px 15px ;
+      padding-top: 15px  ;
+      padding-bottom: 15px;
     }
   }
 
@@ -291,12 +298,10 @@
   }
   &__main {
     display: flex;
-    padding-block: 27px 17px;
-    padding-inline: 37px 14%;
+    padding:27px 37px 17px 14%;
     align-items: center;
     @include media-portrait767max{
-      padding-block: 15px;
-      padding-inline: 15px;
+      padding: 15px;
     }
   }
 
@@ -353,8 +358,8 @@
   }
 
   &__text {
-    padding-block:18px 0;
-    padding-inline: 11px 0 ;
+
+    padding: 18px 11px 0 0;
     line-height: 1.2;
   }
 
@@ -394,14 +399,15 @@
     }
 
     @include media-phones480max{
-      margin-block: 50px;
+      margin-bottom: 50px;
+      margin-top: 50px;
     }
   }
 }
 
 .extra-service {
-  padding: 15px 26px;
-  padding-bottom: 59px;
+  padding: 15px 26px 59px;
+
   &__head{
     padding-left: 12px;
     letter-spacing: -1px;
@@ -413,7 +419,9 @@
     gap: 15px;
   }
   &__extra-element {
-    margin-block: 30px 53px ;
+
+    margin-bottom: 53px ;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 223px 1fr;
     column-gap: 42px;
@@ -449,9 +457,7 @@
   --standard-color:white;
   position: relative;
   display: grid;
-  padding-top: 47px;
-  padding-inline:15px 18px;
-  padding-bottom: 19px;
+  padding: 47px 18px 19px 15px;
   border: 1px solid #82E5AA;
 
   background: #FFF;
@@ -511,7 +517,8 @@
   }
 
   &__item-service {
-    padding-block: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-top: 1px solid #63B082 ;
     display: flex;
     text-indent: 20px;
@@ -535,7 +542,8 @@
 
   &__footer {
     padding-top: 14px;
-    padding-inline:10px ;
+    padding-left:10px ;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
 
@@ -545,7 +553,8 @@
     background: var(--standard-color);
     flex-grow: 1;
     color: white;
-    padding-block:18px ;
+    padding-top:18px ;
+    padding-bottom: 18px;
   }
 }
 
@@ -597,7 +606,10 @@
   grid-template-columns: 87px 54% 1fr;
   padding-block:42px ;
   border-top:1px solid #5D5D5D;
-  padding-inline: 21px 28px;
+  padding: 42px 28px 42px 21px;
+  @include media-portrait767max{
+    grid-template-columns:  1fr;
+  }
   &:last-child{
     margin-bottom: 0px;
   }
@@ -661,7 +673,7 @@
     }
     label:after{
     top:50%;
-      transform: translateY(-100%) scale(1.4);
+      transform: translateY(-50%) scale(1.4);
     }
   }
 }
@@ -670,8 +682,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-inline: 8px;
-  padding-block: 11px 5px;
+  padding: 11px 8px 5px;
   gap: 10px;
   @include media-phones480max{
     flex-wrap: wrap;
@@ -687,8 +698,7 @@
 
   }
   &_pypy{
-    padding-inline:18px;
-    padding-block: 16px 59px ;
+    padding: 16px 18px 59px;
   }
   &__custom-radio,.custom-radio {
     display: flex;
@@ -737,7 +747,8 @@
     display: grid;
     grid-template-columns: repeat(2,minmax(100px,276px));
     margin-top: 29px;
-    padding-block: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     row-gap: 39px;
     column-gap: 77px;
 
@@ -787,7 +798,8 @@
   &__subtext {
     display: flex;
     justify-content: space-between;
-    padding-inline: 9px 0px;
+    padding-left: 9px ;
+    padding-right: 0px;
     @include media-phones480max{
      flex-direction: column;
     }
@@ -806,7 +818,8 @@
   }
 
   &__footer {
-    padding-block:71px 6px;
+    padding-top:71px ;
+    padding-bottom: 6px;
     display: flex;
     justify-content: center;
     button{

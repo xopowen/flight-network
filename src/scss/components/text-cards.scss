@@ -4,17 +4,19 @@
 .text-cards {
   display: grid;
   grid-template-columns: repeat(3,minmax(150px,346px));
-  padding-inline: clamp(15px,getPercentW(172),172px);
+  padding :66px clamp(15px,getPercentW(172),172px)  81px clamp(15px,getPercentW(172),172px);
   gap: 100px;
   row-gap: 30px;
-  padding-block:66px 81px ;
+
   @include media-portrait767max{
-    padding-block:30px 41px ;
+    padding-top: 30px;
+    padding-bottom:  41px ;
     grid-template-columns: repeat(1,minmax(150px,346px));
 
   }
   @include media-phones480max{
-    padding-block:15px 15px ;
+    padding-top: 15px;
+    padding-bottom:  15px ;
   }
 }
 

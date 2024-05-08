@@ -1,6 +1,8 @@
 @import "addidions/functions";
 .container {
+  
   width:100%;
-  padding-inline:clamp(10px,getPercentW(133),133px);
+  padding-left:clamp(10px,getPercentW(133),133px);
+  padding-right:clamp(10px,getPercentW(133),133px);
   margin:auto;
 }

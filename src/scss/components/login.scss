@@ -21,7 +21,7 @@
   align-items: end;
   @include media-phones480max{
     width: auto;
-    padding-inline:15px ;
+    padding: 0 15px ;
     align-items: center;
   }
   @media screen  and (max-height: 920px){
