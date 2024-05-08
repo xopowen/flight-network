@@ -5,7 +5,7 @@
         <article class="payment-method payment-method_card lato gray-border">
             <div class="custom-radio payment-method__custom-radio">
                 <input id="payment-method-card" type="radio" name="payment-method" value="card">
-                <label for="payment-method-card"></label>
+                <label for="payment-method-card" aria-label="payment method"></label>
             </div>
             <div class="payment-method__main">
                 <h2 class="payment-method__head lato_700 text-size_26">Debit card/ credit card</h2>
@@ -14,13 +14,13 @@
                 </p>
             </div>
             <div class="payment-method__footer">
-                <img width="226" height="57" src="@@webRoot/static/img/cards.jpg">
+                <img width="226" height="57" src="@@webRoot/static/img/cards.jpg" alt="">
             </div>
         </article>
         <article class="payment-method payment-method_pypy lato gray-border">
             <div class="custom-radio payment-method__custom-radio">
                 <input id="payment-method-pypy" type="radio" name="payment-method" value="pypy">
-                <label for="payment-method-pypy"></label>
+                <label aria-label="payment method" for="payment-method-pypy"></label>
             </div>
             <div class="payment-method__main">
                 <h2 class="payment-method__head lato_700 text-size_26">
@@ -30,34 +30,34 @@
                     You will be redirected to Paypal’s loginpage, where you can log in to your account and complete the booking.
                 </p>
                 <div class="payment-method__field-container lato_400 text-size_16">
-                    <label class="payment-method__field ">
+                    <label aria-label="first-name" class="payment-method__field ">
                         <span>First name <sub class="payment-method__star">*</sub></span>
                         <input  class="text-size_16" required type="text" name="first-name" placeholder="Test">
                     </label>
-                    <label class="payment-method__field">
+                    <label aria-label="surmame" class="payment-method__field">
                         <span>surmame <sub class="payment-method__star">*</sub></span>
                         <input  class="text-size_16" required type="text" name="surmame" placeholder="Test pasenger">
                     </label>
-                    <label class="payment-method__field">
+                    <label aria-label="street" class="payment-method__field">
                         <span>Street  <sub class="payment-method__star">*</sub></span>
                         <input  class="text-size_16" required type="text" name="street" placeholder="14 Argyle St">
                     </label>
-                    <label class="payment-method__field">
+                    <label  aria-label="postcode" class="payment-method__field">
                         <span>Postcode   <sub class="payment-method__star">*</sub></span>
                         <input  class="text-size_16" required type="number" name="postcode" placeholder="4216">
                     </label>
-                    <label class="payment-method__field">
+                    <label aria-label="city" class="payment-method__field">
                         <span>City <sub class="payment-method__star">*</sub></span>
                         <input  class="text-size_16" required type="text" name="city" placeholder="Melbourn">
                     </label>
-                    <label class="payment-method__field">
+                    <label aria-label="country" class="payment-method__field">
                         <span>Country <sub class="payment-method__star">*</sub></span>
                         <input  class="text-size_16" required type="text" name="country" placeholder="Australia">
                     </label>
                 </div>
             </div>
             <div class="payment-method__footer">
-                <img width="137" height="58" src="@@webRoot/static/img/paypal 1.jpg">
+                <img width="137" height="58" src="@@webRoot/static/img/paypal 1.jpg" alt="">
             </div>
         </article>
         <div itemscope class="gray-border  total-amount  form-info lato ">
@@ -65,7 +65,7 @@
 
             <p class="total-amount__subtext text-size_20">Subtotal <span class="text-size_18">AU$ 1,043.86</span></p>
             <p class="total-amount__subtext lato_700 text-size_20">Amount to pay <span class="text-size_22">AU$ 1,043.86</span></p>
-            <label class="total-amount__permit lato_300 text-size_18">
+            <label aria-label="permit" class="total-amount__permit lato_300 text-size_18">
                 <input name="permit" type="checkbox">
                 <span>
                     I have read and accept Flight Networks <u>travel conditions , Fare Rules, the airline's general terms and conditions,</u>  and I have verified that I have entered my booking information correctly.
@@ -90,7 +90,7 @@
                 <p class="lato lato_800 text-size_28">Departure</p>
                 <time class="lato lato_700 text-size_22">Fri 26 Dec 2022</time>
                 <div class="y-order__count lato lato_700 text-size_26">
-                    <img src="@@webRoot/static/img/icons/take-off.svg">
+                    <img src="@@webRoot/static/img/icons/take-off.svg" alt="">
                     1
                 </div>
             </div>
@@ -104,12 +104,12 @@
         <div class="y-order__info y-order__main">
             <p class="lato lato_800 text-size_28">Bags</p>
             <div class="y-order__pay-service">
-                <img width="50" height="50" src="@@webRoot/static/img/icons/shopping-bag.svg">
+                <img width="50" height="50" src="@@webRoot/static/img/icons/shopping-bag.svg" alt="">
                 <p class="lato lato_800 text-size_28">Hand baggage </p>
                 <p class="lato lato_700 text-size_22">1X7 Kg</p>
             </div>
             <div class="y-order__pay-service">
-                <img width="50" height="50" src="@@webRoot/static/img/icons/shopping-bag.svg">
+                <img width="50" height="50" src="@@webRoot/static/img/icons/shopping-bag.svg" alt="">
                 <p class="lato lato_800 text-size_28">Hand baggage </p>
                 <p class="lato lato_700 text-size_22">1X7 Kg</p>
             </div>

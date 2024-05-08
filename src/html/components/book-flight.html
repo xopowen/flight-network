@@ -11,16 +11,16 @@
             <div class="calculate-book-flight__direction">
                 <div class="custom-radio">
                     <input id="direction-return" type="radio"  name="direction"/>
-                    <label for="direction-return">Return</label>
+                    <label aria-label="Return" for="direction-return">Return</label>
                 </div>
                 <div class="custom-radio">
                     <input id="direction-one-way" type="radio" name="direction"/>
-                    <label for="direction-one-way">One - Way</label>
+                    <label aria-label="One - Way" for="direction-one-way">One - Way</label>
 
                 </div>
                 <div class="custom-radio">
                     <input id = 'direction-multi-way' type="radio" name="direction"/>
-                    <label for="direction-multi-way">Multi - Way</label>
+                    <label aria-label="Multi - Way" for="direction-multi-way">Multi - Way</label>
                 </div>
 
 
@@ -28,31 +28,31 @@
             </div>
             <div class="flex-orientation calculate-book-flight__flex">
                 <div class="calculate-book-flight__ticket-info ">
-                    <label class="calculate-book-flight__field round-gray-field">
+                    <label aria-label="From" class="calculate-book-flight__field round-gray-field">
                         <sup>  From </sup>
                         <input type="text"  name="city" placeholder="Melbourne">
                     </label>
                     <label class="calculate-book-flight__field round-gray-field">
-                        <label>
+                        <label aria-label="Depart">
                             <sup> Depart</sup>
                             <input type="date"  name="date-depart">
                         </label>
-                        <label>
+                        <label aria-label="Return">
                             <sup> Return </sup>
                             <input type="date"  name="date-return">
                         </label>
                     </label>
                 </div>
                 <div class="calculate-book-flight__container-arrive">
-                    <img src="@@webRoot/static/img/icons/arrives.svg">
+                    <img src="@@webRoot/static/img/icons/arrives.svg" alt="">
                 </div>
                 <div class="calculate-book-flight__ticket-info">
-                    <label class="calculate-book-flight__field round-gray-field">
+                    <label aria-label="city" class="calculate-book-flight__field round-gray-field">
                         <sup>To</sup>
                         <input type="text"  name="city" placeholder="Perth">
                     </label>
                     <label class="calculate-book-flight__field round-gray-field">
-                        <label >
+                        <label aria-label="Passengers" >
                             <sup>Passengers</sup>
                             <select  name="passengers">
                                 <option value="1">1 adult</option>
@@ -63,7 +63,7 @@
                             </select>
                         </label>
 
-                        <label>
+                        <label aria-label="Class">
                             <sup>Class</sup>
                            <select name="class">
                                <option value="economy">Economy</option>
@@ -74,7 +74,7 @@
                     </label>
                 </div>
                 <div class="calculate-book-flight__footer">
-                    <button  class="btn btn_submit calculate-book-flight__btn">
+                    <button  aria-label="Search" class="btn btn_submit calculate-book-flight__btn">
                         Search
                     </button>
                 </div>
