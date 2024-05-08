@@ -3,16 +3,14 @@
     @@include('../traveller-layout/h1.html',{'text':'Traveller information'})
 
     <div class="travel-info__main">
-        <article itemscope class="gray-border travel-info__contact form-info lato lato_700">
+        <article   class="gray-border travel-info__contact form-info lato lato_700">
             <h2 class="form-info__head  text-size_35">Contact information for all passengers</h2>
             <div class="form-info__flex    ">
                 <label class="form-info__field     text-size_24">
                     Email
-
                     <div class="round-gray-field form-info__input-container">
                         <input class="lato_500 text-size_18" required type="email" placeholder="Email@yahoo.com">
                     </div>
-
                 </label>
                 <label class="  form-info__field  text-size_24">
                     Mobile Number
@@ -30,7 +28,8 @@
             </label>
 
         </article>
-        <article itemscope class="gray-border travel-info__contact form-info form-info_big-padding lato lato_700">
+
+        <article   class="gray-border travel-info__contact form-info form-info_big-padding lato lato_700">
             <h2 class="form-info__head  text-size_35">Passenger 1, adult</h2>
             <p class="form-info__subtext text-size_18 lato_400">*Field required</p>
 
@@ -38,18 +37,18 @@
                 <p class="form-info__field text-size_20 lato_400 ">     Title* </p>
                 <div class="form-info__radio-container">
                     <div class="custom-radio text-size_22 lato_400  ">
-                        <input id="title-mr" type="radio"  name="title"/>
+                        <input id="title-mr" type="radio"  name="appeal" value="mr"/>
                         <label for="title-mr">Mr</label>
                     </div>
                     <div class="custom-radio text-size_22 lato_400  ">
-                        <input id="title-mrs-ms" type="radio"  name="title"/>
+                        <input id="title-mrs-ms" type="radio"  name="appeal" value="ms"/>
                         <label for="title-mrs-ms">Mrs/Ms</label>
                     </div>
                 </div>
 
             </div>
             <div class="form-info__flex    ">
-                <label class="form-info__field     text-size_24">
+                <label class="form-info__field text-size_24">
                     First name
 
                     <div class="round-gray-field form-info__input-container">
@@ -69,7 +68,8 @@
 
 
         </article>
-        <article itemscope class="add-service lato lato_700">
+
+        <article   class="add-service lato lato_700">
             <h2 class="text-size_35 add-service__head">
                 Hand Baggage
             </h2>
@@ -82,7 +82,7 @@
                 <p class="add-service__status"><strong>Included</strong> </p>
             </div>
         </article>
-        <article itemscope class="add-service lato lato_700">
+        <article   class="add-service lato lato_700">
             <h2 class="text-size_35 add-service__head">
                 Checked baggage
             </h2>
@@ -96,7 +96,7 @@
             </div>
         </article>
 
-        <article itemscope class="lost-bag-service lato lato_700">
+        <article   class="lost-bag-service lato lato_700">
             <div class="lost-bag-service__img-container">
                 <img src="@@webRoot/static/img/Screenshot 2022-12-16 160342.jpg" width="345" height="307" alt="baggage">
             </div>

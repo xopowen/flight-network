@@ -86,6 +86,12 @@
   &_active {
     background-color: rgba(154, 211, 242, 0.64);
     color: #6B79F8;
+
+      picture,
+        source,
+        img,svg{
+        background: #4A65F0;
+      }
   }
 }
 
@@ -224,6 +230,10 @@
     border-radius: 0;
     background-color: var(--bgr-header-footer);
     color:white;
+    &_active{
+      transform: scale(1.1);
+      outline:5px solid red ;
+    }
   }
 }
 

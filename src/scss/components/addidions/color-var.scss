@@ -2,14 +2,15 @@
 :root{
   --colol-header-text:#ffff;
   --color-text-white:#ffff;
+  --order-card_bag:#ffff;
   --bgr-header-footer:#111F44;
   --calc-sup: #6A6868;
   --background-color-main: white;
   --color-active_link:blue;
   --outline-color:#728DABFF;
-
 }
 :root[theme='dark'] {
   --background-color-main:#6B6B6C;
   --color-active_link: rgba(56, 110, 232, 0.2);
+  --order-card_bag:gray;
 }

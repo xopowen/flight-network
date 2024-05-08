@@ -59,7 +59,7 @@ a:visited{
     line-height: normal;
   }
   &:hover{
-    transform: scale(1.01);
+    transform: scale(1.1);
   }
   &:active{
     transform: scale(0.99);
@@ -114,8 +114,6 @@ a:visited{
 .custom-radio{
   --radios-circle:20px;
   --color-cicle:#DDDDDD;
-
-
 
   input{
     opacity: 0;

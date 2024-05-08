@@ -3,9 +3,46 @@
 @@include('../components/head.html')
 <body>
 @@include('../components/header.html',{icon:false,header__gray:'',rightIcons:'set_profile'})
+
+<script type="text/javascript">
+    //Кол-во дней хранения cookie
+    var days_to_store = 90;
+    //Параметры создания cookie с UID Admitad
+    var uid_cookie_name = 'admitad_uid';
+    // Название cookie, в которой
+    //хранится admitad_uid
+    var uid_channel_name =  'admitad_uid';
+    // функция для получения источника
+    //из GET-параметра
+    /**
+     *
+     * @param get_param_name
+     * @return {string|null}
+     */
+    function getParamFromUriAdmitad (get_param_name) {
+        return  new URLSearchParams(window.location.search).get(get_param_name);
+    }
+    // функция для записи источника в cookie с именем cookie_name на 90 дней
+    function setAdmitadCookie (param_name, cookie_name) {
+        var param = getParamFromUriAdmitad(param_name);
+        if (!param) { return; }
+
+        var period = days_to_store * 60 * 60 * 24 * 1000; // в секундах
+        var expiresDate = new Date((period) + +new Date);
+
+        var cookieString = cookie_name + '=' + param + '; path=/; expires=' +
+            expiresDate.toGMTString();
+        document.cookie = cookieString;
+        document.cookie = cookieString + '; domain=.' + location.host;
+    };
+    // запись cookie
+    setAdmitadCookie(uid_channel_name, uid_cookie_name);
+</script>
+
 <main>
     @@include('../components/book-flight.html')
     @@include('../components/text-cards.html')
+
 </main>
 @@include('../components/footer.html')
 </body>
